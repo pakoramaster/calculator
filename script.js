@@ -1,14 +1,17 @@
-// Calculator
-
-
+// Initialization
 const display = document.getElementById("display");
 
+// Functions
 function appendValue(input) {
     display.value += input;
 }
 
-function clear() {
+function clearDisplay() {
     display.value= "";
+}
+
+function backspace() {
+    display.value = display.value.slice(0, -1);
 }
 
 function calculate() {
